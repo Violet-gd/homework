@@ -7,7 +7,7 @@ elif 59>=grade>=50:
     print("Your grade is: C")
 elif 49>=grade>=40:
     print("Your grade is: D")
-elif 0>=grade>=39:
+elif 39>=grade>=0:
     print("Your grade is: F")
 else:
     print("Error:Grades must be between 0 and 100")
