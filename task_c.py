@@ -1,6 +1,6 @@
 password=input("Plsase enter the password")
 if len(password)>=8 and password.isalnum():
-    if password.isdigit():
+    if password.isdigit() or password.isalpha():
         print("Your password must contain at least 8 characters, and a mix of letters and numbers")
     else:
         print('Your password is valid')
