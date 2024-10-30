@@ -8,7 +8,8 @@ def currency_converter(amount,from_currency,to_currency):
     if amount<0:
         return 0.0
     else:
-        return round(conversion_rate[from_currency][to_currency]*amount,2) 
+        return round(conversion_rate[from_currency][to_currency]*amount,2)
+"""
 a=int(input("amount"))
 b=input("from_currency")
 c=input("to_currency")
