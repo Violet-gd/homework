@@ -42,13 +42,13 @@ for i in grade:
                mean+=float(j)
                num_mod+=1
      mean=mean/num_mod
-     if mean>=70:
+     if mean>=70.00:
           res.append([i[0],mean,"1"])
-     elif mean>=60:
+     elif mean>=60.00:
           res.append([i[0],mean,"2:1"])
-     elif mean>=50:
+     elif mean>=50.00:
           res.append([i[0],mean,"2:2"])
-     elif mean>=40:
+     elif mean>=40.00:
           res.append([i[0],mean,"3"])
      else:
           res.append([i[0],mean,"F"])
