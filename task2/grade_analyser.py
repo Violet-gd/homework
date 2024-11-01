@@ -41,7 +41,7 @@ for i in grade:
           if j.isdigit():
                mean+=int(j)
                num_mod+=1
-     mean=round(mean/num_mod,2)
+     mean=mean/num_mod
      if mean>=70:
           res.append([i[0],mean,"1"])
      elif mean>=60:
@@ -54,4 +54,4 @@ for i in grade:
           res.append([i[0],mean,"F"])
 with open(f"{x}_out.csv","w")as f:
      for i in res:
-          f.write(f"{i[0]},{i[1]},{i[2]}\n")
+          f.write(f"{i[0]},{i[1]:.2f},{i[2]}\n")
