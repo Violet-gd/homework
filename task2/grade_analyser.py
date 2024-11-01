@@ -35,20 +35,20 @@ with open(f"{x}","r") as f:
 grade.pop(0)
 res=[]
 for i in grade:
-     mean=0
-     num_mod=0
+     mean=0.0
+     num_mod=0.0
      for j in i[1:]:
           if j:
                mean+=float(j)
                num_mod+=1
      mean=mean/num_mod
-     if mean>=70.0001:
+     if mean>=70.000:
           res.append([i[0],mean,"1"])
-     elif mean>=60.0001:
+     elif mean>=60.000:
           res.append([i[0],mean,"2:1"])
-     elif mean>=50.0001:
+     elif mean>=50.000:
           res.append([i[0],mean,"2:2"])
-     elif mean>=40.0001:
+     elif mean>=40.000:
           res.append([i[0],mean,"3"])
      else:
           res.append([i[0],mean,"F"])
