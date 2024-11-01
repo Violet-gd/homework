@@ -52,6 +52,6 @@ for i in grade:
           res.append([i[0],mean,"3"])
      else:
           res.append([i[0],mean,"F"])
-with open(f"{x} _out.csv","w")as f:
+with open(f"{x}_out.csv","w")as f:
      for i in res:
           f.write(f"{i[0]},{i[1]},{i[2]}\n")
