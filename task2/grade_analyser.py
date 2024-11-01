@@ -30,7 +30,7 @@ Note:
 Your code will only be tested on valid files in the format shown in the 4 example files in this folder - you do not need to validate any data.
 '''
 x=input("What you want to out")
-with open(f"task2/{x}","r") as f:
+with open(f"{x}","r") as f:
      grade=[i.strip().split(",") for i in f]
 grade.pop(0)
 res=[]
@@ -52,6 +52,6 @@ for i in grade:
           res.append([i[0],mean,"3"])
      else:
           res.append([i[0],mean,"F"])
-with open(f"{x}_out.csv","w")as f:
+with open(f"{x} _out.csv","w")as f:
      for i in res:
           f.write(f"{i[0]},{i[1]},{i[2]}\n")
