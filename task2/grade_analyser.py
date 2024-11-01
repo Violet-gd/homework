@@ -39,7 +39,7 @@ for i in grade:
      num_mod=0
      for j in i[1:]:
           if j:
-               mean+=int(j)
+               mean+=float(j)
                num_mod+=1
      mean=mean/num_mod
      if mean>=70:
