@@ -38,7 +38,7 @@ for i in grade:
      mean=0
      num_mod=0
      for j in i[1:]:
-          if j.isdigit():
+          if j:
                mean+=int(j)
                num_mod+=1
      mean=mean/num_mod
