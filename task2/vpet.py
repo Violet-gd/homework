@@ -7,7 +7,7 @@
 class VirtualPet:
     def __init__(self,name):
         self.name=name
-        self.energy=0
+        self.energy=10
         self.hunger=0
     def play(self):
         if self.energy>=2:
